@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, Logo, LogoutBtn } from '../index'
+import { Container } from '../index'
+import Logo from '../Logo'
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import LogoutBtn from "../header/LogoutBtn";
 
 
 function Header() {
@@ -36,10 +38,20 @@ function Header() {
             slug: '/about',
             active: true
         },
+        {
+            name: 'Login',
+            slug: '/login',
+            active: false
+        },
+        {
+            name: 'Signup',
+            slug: '/signup',
+            active: false
+        }
     ]
 
     return (
-        <header className="py-3 shadow bg-gray-500">
+        <header className="py-1 shadow" style={{ color: '#fbf2c4' }}>
             <Container>
                 <nav className="flex">
                     <div className="mr-4">
@@ -54,9 +66,22 @@ function Header() {
                                 <li key={item.name}>
                                     <button
                                         onClick={() => navigate(item.slug)}
-                                        className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full">
+                                        className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full" style={{ cursor: 'pointer' }}>
                                         {item.name}
                                     </button>
+                                    {
+                                        item.name === 'Login' || item.name === 'Signup' ? (
+                                            authStatus === 'unauthenticated' ? (
+                                                <button
+                                                    onClick={() => navigate(item.slug)}
+                                                    className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full" style={{ cursor: 'pointer' }}>
+                                                    {item.name}
+                                                </button>
+                                            ) : (
+                                                <LogoutBtn />
+                                            )
+                                        ) : null
+                                    }                                    
                                 </li>
                             ) : null
                         ))}

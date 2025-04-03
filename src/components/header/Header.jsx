@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import LogoutBtn from "../header/LogoutBtn";
 
 
+
 function Header() {
 
     const authStatus = useSelector((state) => state.auth.status)
@@ -50,14 +51,15 @@ function Header() {
         }
     ]
 
+
     return (
         <header className="py-1 shadow" style={{ color: '#fbf2c4' }}>
             <Container>
                 <nav className="flex">
                     <div className="mr-4">
-                        <Link to='/'>
+                        
                             <Logo width="70px" />
-                        </Link>
+                        
                     </div>
 
                     <ul className="flex ml-auto">
@@ -66,7 +68,7 @@ function Header() {
                                 <li key={item.name}>
                                     <button
                                         onClick={() => navigate(item.slug)}
-                                        className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full" style={{ cursor: 'pointer' }}>
+                                        className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full cursor-pointer">
                                         {item.name}
                                     </button>
                                     {
@@ -74,14 +76,14 @@ function Header() {
                                             authStatus === 'unauthenticated' ? (
                                                 <button
                                                     onClick={() => navigate(item.slug)}
-                                                    className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full" style={{ cursor: 'pointer' }}>
+                                                    className="inline-block px-6 py-2 duration-200 hover:bg-teal-600 rounded-full cursor-pointer">
                                                     {item.name}
                                                 </button>
                                             ) : (
                                                 <LogoutBtn />
                                             )
                                         ) : null
-                                    }                                    
+                                    }
                                 </li>
                             ) : null
                         ))}

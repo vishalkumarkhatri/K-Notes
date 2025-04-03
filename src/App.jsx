@@ -6,12 +6,11 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
-    <div className='min-h-screen flex flex-wrap content-between' style={{background: '#008585'}}>
+    <div className='min-h-screen flex flex-wrap content-between' style={{ background: '#008585' }}>
       <div className='w-full block'>
         <Header />
         <main>
           <Outlet />
-          {/* <p>Khatri Notes</p> */}
         </main>
         <Footer />
       </div>

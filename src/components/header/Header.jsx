@@ -53,7 +53,7 @@ function Header() {
 
 
     return (
-        <header className="py-1 shadow" style={{ color: '#fbf2c4' }}>
+        <header className="py-1 shadow font-serif" style={{ color: '#fbf2c4' }}>
             <Container>
                 <nav className="flex">
                     <div className="mr-4">

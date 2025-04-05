@@ -123,7 +123,7 @@ function About() {
                 <div className="border border-t-2 border-t-teal-950 mt-5" > </div>
                 <div className="flex flex-col justify-center items-center mt-2">
                     <h5 className='text-2xl font-bold font-serif text-design text-center'>UI Libraries</h5>
-                    <div className="flex flex-row w-250 items-center justify-around font-bold font-serif" style={{ color: '#fbf2c4' }}>
+                    <div className="flex flex-row w-150 items-center justify-around font-bold font-serif" style={{ color: '#fbf2c4' }}>
 
                         <div className='flex flex-row justify-center items-center mt-5'>
                             <img src={tailwind} alt="tailwind" className="w-10 h-10" />

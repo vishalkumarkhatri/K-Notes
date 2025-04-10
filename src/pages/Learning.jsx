@@ -1,6 +1,6 @@
 import React from 'react'
 import LearningHeader from '../components/header/LearningHeader'
-import LearningContent from './blog/LearningContent'
+import LearningContent from './LearningContent'
 
     function Learning() {
 

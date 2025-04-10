@@ -20,8 +20,8 @@ function Header() {
             active: true
         },
         {
-            name: 'Departments',
-            slug: '/departments',
+            name: 'E-Library',
+            slug: '/e-library',
             active: true
         },
         {

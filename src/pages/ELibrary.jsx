@@ -1,22 +1,21 @@
 import React from 'react'
 import Card from '../components/container/Card'
 
-function Departments() {
+function Library() {
     const cardItems = [
         {
-            title: 'Vocational',
+            title: 'Books',
             description: [
-                ['B.Sc.Computer Application', { slug: '/computer-application' }],
-                ['B.Sc.Information Technology', { slug: '/information-technology' }],
+                ['Vocational', { slug: '/vocational' }],
+                ['Science', { slug: '/science' }],
             ]
 
         },
         {
-            title: 'Science',
+            title: 'Notes',
             description: [
-                ['B.Sc.Mathematics', { slug: '/maths' }],
-                ['B.Sc.Physics', { slug: '/physics' }],
-                ['B.Sc.Chemistry', { slug: '/chemistry' }],
+                ['Vocational', { slug: '/vocational' }],
+                ['Science', { slug: '/science' }],
             ]
         },
 
@@ -33,4 +32,4 @@ function Departments() {
     )
 }
 
-export default Departments  
+export default Library  

@@ -2,7 +2,7 @@ import About from "./About";
 import Home from "./Home";
 import Login from "./Login";
 import Signup from "./Signup";
-import Departments from "./Departments";
+import Library from "./ELibrary";
 import Learning from "./Learning";
 
 
@@ -11,7 +11,7 @@ export {
     Home,
     Login,
     Signup,
-    Departments,
+    Library,
     Learning,
     
 };

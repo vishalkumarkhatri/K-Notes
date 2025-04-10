@@ -21,6 +21,11 @@ function Learning() {
             active: true
         },
         {
+            name: 'DSA',
+            slug: '/learning/dsa',
+            active: true
+        },
+        {
             name: 'Java',
             slug: '/learning/java',
             active: true
@@ -36,7 +41,7 @@ function Learning() {
             active: true
         },
         {
-            name: 'Command Prompts',
+            name: 'CMD',
             slug: '/learning/command-prompts',
             active: true
         },
@@ -50,7 +55,7 @@ function Learning() {
 
     return (
         <>
-            <header className="py-1 shadow font-serif" style={{ color: '#fbf2c4' }}>
+            <header className="py-1 shadow font-serif" style={{ color: '#fbf2c4', background: 'rgba(24, 138, 141, 1) 100%' }}>
                 <Container>
                     <nav className='flex'>
                         <ul className='flex m-auto'>

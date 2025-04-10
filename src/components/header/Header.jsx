@@ -25,8 +25,8 @@ function Header() {
             active: true
         },
         {
-            name: 'Learning',
-            slug: '/learning',
+            name: 'Practice',
+            slug: '/practice',
             active: true
         },
         {

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 
-function Learning() {
+function PracticeHeader() {
 
     const authStatus = useSelector((state) => state.auth.status)
     const navigate = useNavigate();
@@ -12,42 +12,42 @@ function Learning() {
     const navItems = [
         {
             name: 'C',
-            slug: '/learning/c',
+            slug: '/practice/c',
             active: true
         },
         {
             name: 'C++',
-            slug: '/learning/cpp',
+            slug: '/practice/cpp',
             active: true
         },
         {
             name: 'DSA',
-            slug: '/learning/dsa',
+            slug: '/practice/dsa',
             active: true
         },
         {
             name: 'Java',
-            slug: '/learning/java',
+            slug: '/practice/java',
             active: true
         },
         {
             name: 'JavaScript',
-            slug: '/learning/javascript',
+            slug: '/practice/javascript',
             active: true
         },
         {
             name: 'Python',
-            slug: '/learning/python',
+            slug: '/practice/python',
             active: true
         },
         {
             name: 'CMD',
-            slug: '/learning/command-prompts',
+            slug: '/practice/command-prompts',
             active: true
         },
         {
             name: 'Git',
-            slug: '/learning/git',
+            slug: '/practice/git',
             active: true
         },
 
@@ -81,4 +81,4 @@ function Learning() {
     )
 }
 
-export default Learning
+export default PracticeHeader

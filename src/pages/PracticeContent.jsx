@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function LearningContent() {
+function PracticeContent() {
     const frontContent = [
         {
             name: 'C',
             slug: '/learning/c',
             content:
             {
-                title: 'A Beginner\'s Guide to C',
-                description: 'This tutorial is designed for Beginner\'s who want to learn C programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in C',
+                description: 'C programming language questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -17,8 +17,8 @@ function LearningContent() {
             slug: '/learning/cpp',
             content:
             {
-                title: 'A Beginner\'s Guide to C++',
-                description: 'This tutorial is designed for Beginner\'s who want to learn C++ programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in C++',
+                description: 'C++ programming language questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -26,8 +26,8 @@ function LearningContent() {
             slug: '/learning/dsa',
             content:
             {
-                title: 'A Beginner\'s Guide to DSA',
-                description: 'This tutorial is designed for Beginner\'s who want to learn DSA programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in DSA',
+                description: 'DSA questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -35,8 +35,8 @@ function LearningContent() {
             slug: '/learning/java',
             content:
             {
-                title: 'A Beginner\'s Guide to Java',
-                description: 'This tutorial is designed for Beginner\'s who want to learn Java programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in Java',
+                description: 'Java programming language questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -44,8 +44,8 @@ function LearningContent() {
             slug: '/learning/javascript',
             content:
             {
-                title: 'A Beginner\'s Guide to JavaScript',
-                description: 'This tutorial is designed for Beginner\'s who want to learn JavaScript programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in JavaScript',
+                description: 'JavaScript questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -53,8 +53,8 @@ function LearningContent() {
             slug: '/learning/python',
             content:
             {
-                title: 'A Beginner\'s Guide to Python',
-                description: 'This tutorial is designed for Beginner\'s who want to learn Python programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in Python',
+                description: 'Python programming language questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -62,8 +62,8 @@ function LearningContent() {
             slug: '/learning/command-prompt',
             content:
             {
-                title: 'A Beginner\'s Guide to Command Prompt',
-                description: 'This tutorial is designed for Beginner\'s who want to learn Command Prompt programming language there fundamentals.',
+                title: 'Beginner\'s to Advanced Problems in CMD',
+                description: 'CMD questions and solutions for beginners to advanced.',
             }
         },
         {
@@ -82,7 +82,7 @@ function LearningContent() {
             {
                 frontContent.map((item) => {
                     return (
-                        <div className="felx w-200 h-50 shadow-lg rounded-2xl p-5 flex-row justify-center items-center ml-80 mt-5 overflow-hidden inline-bloc card-gradient" style={{ color: '#fbf2c4' }} >
+                        <div className="felx w-200 h-50 shadow-lg rounded-2xl p-5 flex-row justify-center items-center ml-80 mt-5 mb-5 overflow-hidden inline-bloc card-gradient" style={{ color: '#fbf2c4' }} >
                             <Link to={item.slug} key={item.slug} className='cursor-pointer'>
                                 <div>
                                     <h2 className="text-xl font-serif text-baseline">Topic: <b>{item.name}</b></h2>
@@ -98,4 +98,4 @@ function LearningContent() {
     )
 }
 
-export default LearningContent
+export default PracticeContent

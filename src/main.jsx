@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import AuthLayout from './components/AuthLayout.jsx'
-import { About, Library, Home, Login, Signup, Learning } from './pages/index.js'
+import { About, Library, Home, Login, Signup, Practice } from './pages/index.js'
 
 
 const router = createBrowserRouter([
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <Library />,
       },
       {
-        path: '/learning',
-        element: <Learning />,
+        path: '/practice',
+        element: <Practice />,
       },
       {
         path: '/about',

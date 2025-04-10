@@ -3,7 +3,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Signup from "./Signup";
 import Library from "./ELibrary";
-import Learning from "./Learning";
+import Practice from "./Practice";
 
 
 export {
@@ -12,6 +12,6 @@ export {
     Login,
     Signup,
     Library,
-    Learning,
+    Practice,
     
 };
